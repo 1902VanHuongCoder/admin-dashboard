@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Montserrat:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*Colors and Default Settings*/
+
+:root{
+    --priColor: hsl(94, 59%, 35%);
+    --hvColor: #bdf094;
+    --paleGreen: hsl(96, 75%, 89%);
+    --wColor: hsl(0, 0%, 100%);
+    --bColor: hsl(0, 0%, 18%);
+    --tColor: hsl(240, 1%, 48%);
+    --bgColor: hsl(220, 10%, 94%);
+    --gColor: rgb(190,190,190);
+    --inputColor: hsl(330, 12%, 97%);
+
+
+    --biggestFS: 2.5rem;
+    --h1FS: 1.5rem;
+    --h2FS: 1.25rem;
+    --h3FS: 1rem;
+    --nmFS: .938rem;
+    --smFS: .813rem;
+    --smlFS: .75rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html{
+    font-size: 90%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a{
+    text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+li{
+    list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon{
+    font-size: var(--h2FS);
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.flex{
+    justify-content: center;
+    display: flex;
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--inputColor);
+    padding: .5rem .8rem;
+    color: var(--tColor);
+}
+
+.btn .icon{
+    margin-left: .5rem;
+}
+
+.btn:hover{
+    background: var(--paleGreen);
+    color: var(--priColor);
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 1rem;
+}
+
+.container{
+    position: relative;
+    width: 95vw;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bgColor);
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 8px var(--gColor);
+}
+
+::-webkit-scrollbar{
+    display: none;
 }

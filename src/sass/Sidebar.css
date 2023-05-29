@@ -1,0 +1,116 @@
+:root {
+  --priColor: hsl(94, 59%, 35%);
+  --hvColor: #bdf094;
+  --paleGreen: hsl(96, 75%, 89%);
+  --wColor: hsl(0, 0%, 100%);
+  --bColor: hsl(0, 0%, 18%);
+  --tColor: hsl(240, 1%, 48%);
+  --bgColor: hsl(220, 10%, 94%);
+  --gColor: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+  --biggestFS: 2.5rem;
+  --h1FS: 1.5rem;
+  --h2FS: 1.25rem;
+  --h3FS: 1rem;
+  --nmFS: 0.938rem;
+  --smFS: 0.813rem;
+  --smlFS: 0.75rem;
+}
+
+.sidebar {
+  width: 18%;
+  background: var(--wColor);
+  height: 100%;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: auto;
+  gap: 1.5rem;
+}
+.sidebar .logoDiv {
+  align-items: center;
+  color: var(--priColor);
+  justify-content: flex-start;
+  padding: 1rem 0 0 1rem;
+}
+.sidebar .logoDiv img {
+  width: 50px;
+  height: 50px;
+}
+.sidebar .menuDiv .menuLists {
+  gap: 1rem;
+}
+.sidebar .menuDiv .menuLists .listItem {
+  padding: 0.2rem 1rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+.sidebar .menuDiv .menuLists .listItem::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 5px;
+  height: 0;
+  background: var(--priColor);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.sidebar .menuDiv .menuLists .listItem .icon {
+  margin-right: 10px;
+}
+.sidebar .menuDiv .menuLists .listItem a {
+  font-size: var(--smFS);
+  color: var(--gColor);
+  font-weight: 500;
+  align-items: center;
+  transition: 0.2 !important;
+}
+.sidebar .menuDiv .menuLists .listItem a:hover {
+  color: var(--priColor);
+}
+.sidebar .menuDiv .menuLists .listItem:hover::before {
+  height: 100%;
+  transition: 0.3s;
+}
+.sidebar .menuDiv .menuTitle {
+  font-size: var(--h3FS);
+  margin-bottom: 10px;
+  padding-left: 17px;
+}
+.sidebar .sidebarCard {
+  position: relative;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+}
+.sidebar .sidebarCard .icon {
+  position: absolute;
+  background: var(--hvColor);
+  border: 5px solid var(--wColor);
+  border-radius: 50%;
+  font-size: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -5px;
+}
+.sidebar .sidebarCard .cardContent {
+  padding: 1rem;
+  background: var(--hvColor);
+  border-radius: 10px;
+}
+.sidebar .sidebarCard .cardContent h3 {
+  padding: 0.8rem 0 0.5rem;
+  font-size: var(--h3FS);
+}
+.sidebar .sidebarCard .cardContent p {
+  font-size: var(--smFS);
+  color: var(--tColor);
+}
+.sidebar .sidebarCard .cardContent .btn {
+  font-size: var(--nmFS);
+  margin-top: 8px;
+  font-weight: 500;
+}/*# sourceMappingURL=Sidebar.css.map */
