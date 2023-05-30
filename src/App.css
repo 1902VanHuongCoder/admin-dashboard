@@ -45,6 +45,7 @@ li{
 
 .icon{
     font-size: var(--h2FS);
+    cursor: pointer;
 }
 
 img{

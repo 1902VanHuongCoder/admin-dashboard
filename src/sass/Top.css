@@ -1,1 +1,130 @@
-/*# sourceMappingURL=Top.css.map */
+:root {
+  --priColor: hsl(94, 59%, 35%);
+  --hvColor: #bdf094;
+  --paleGreen: hsl(96, 75%, 89%);
+  --wColor: hsl(0, 0%, 100%);
+  --bColor: hsl(0, 0%, 18%);
+  --tColor: hsl(240, 1%, 48%);
+  --bgColor: hsl(220, 10%, 94%);
+  --gColor: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+  --biggestFS: 2.5rem;
+  --h1FS: 1.5rem;
+  --h2FS: 1.25rem;
+  --h3FS: 1rem;
+  --nmFS: 0.938rem;
+  --smFS: 0.813rem;
+  --smlFS: 0.75rem;
+}
+
+.topSection {
+  padding: 1rem;
+}
+.topSection .headerSection {
+  justify-content: space-between;
+  padding: 1rem;
+}
+.topSection .headerSection .headerTitle {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.topSection .headerSection .headerTitle h1 {
+  font-size: var(--h1FS);
+  color: var(--bColor);
+}
+.topSection .headerSection .headerTitle p {
+  font-size: var(--nmFS);
+  color: var(--bColor);
+}
+.topSection .headerSection .headerSearchBar {
+  align-items: center;
+  background: var(--wColor);
+  padding: 0 1rem;
+  border-radius: 5px;
+}
+.topSection .headerSection .headerSearchBar input {
+  border: none;
+  outline: none;
+}
+.topSection .headerSection .headerAdminSection {
+  align-items: center;
+  gap: 10px;
+}
+.topSection .headerSection .headerAdminSection span {
+  background: var(--wColor);
+  color: var(--bColor);
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.topSection .headerSection .headerAdminSection .userImage {
+  height: 40px;
+  width: 40px;
+  border: 3px solid var(--wColor);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.topSection .headerSection .headerAdminSection .userImage img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.topSection .cardSection {
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.topSection .cardSection .rightCard {
+  flex-basis: 70%;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 3px solid var(--wColor);
+  padding: 1rem;
+  gap: 0.5rem;
+}
+.topSection .cardSection .rightCard .video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.topSection .cardSection .rightCard .video video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.topSection .cardSection .rightCard h1 {
+  z-index: 100;
+  color: var(--wColor);
+  font-size: var(--h1FS);
+}
+.topSection .cardSection .rightCard p {
+  z-index: 100;
+  color: var(--wColor);
+}
+.topSection .cardSection .rightCard .button {
+  align-items: center;
+  z-index: 100;
+  margin-top: 10px;
+}
+.topSection .cardSection .rightCard .button .btn {
+  box-shadow: none;
+  border: 2px solid var(--wColor);
+  cursor: pointer;
+}
+.topSection .cardSection .rightCard .button .transparent {
+  margin-left: 10px;
+  background: transparent;
+  color: var(--wColor);
+}
+.topSection .cardSection .rightCard .button .transparent:hover {
+  background: var(--hvColor);
+  color: var(--priColor);
+}/*# sourceMappingURL=Top.css.map */

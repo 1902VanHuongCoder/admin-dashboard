@@ -92,14 +92,41 @@
   border: 5px solid var(--wColor);
   border-radius: 50%;
   font-size: 35px;
-  left: 50%;
-  transform: translateX(-50%);
   top: -5px;
+  transform: translateX(-50%) rotate(0deg);
+  z-index: 100;
+  transition: 0.5s ease;
+}
+.sidebar .sidebarCard:hover .icon {
+  transform: translateX(-50%) rotate(-720deg);
+  color: var(--priColor);
 }
 .sidebar .sidebarCard .cardContent {
   padding: 1rem;
   background: var(--hvColor);
   border-radius: 10px;
+  position: relative;
+}
+.sidebar .sidebarCard .cardContent .circle1,
+.sidebar .sidebarCard .cardContent .circle2 {
+  position: absolute;
+  background: var(--wColor);
+  border-radius: 50%;
+}
+.sidebar .sidebarCard .cardContent .circle1 {
+  width: 60px;
+  height: 60px;
+  left: -20px;
+  top: -20px;
+  opacity: 0.7;
+}
+.sidebar .sidebarCard .cardContent .circle2 {
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: -30px;
+  opacity: 0.3;
+  z-index: 1;
 }
 .sidebar .sidebarCard .cardContent h3 {
   padding: 0.8rem 0 0.5rem;
@@ -110,7 +137,9 @@
   color: var(--tColor);
 }
 .sidebar .sidebarCard .cardContent .btn {
+  position: relative;
   font-size: var(--nmFS);
   margin-top: 8px;
   font-weight: 500;
+  z-index: 10;
 }/*# sourceMappingURL=Sidebar.css.map */
