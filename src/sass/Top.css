@@ -74,6 +74,7 @@
 .topSection .cardSection {
   margin-top: 1rem;
   gap: 1rem;
+  justify-content: space-between;
 }
 .topSection .cardSection .rightCard {
   flex-basis: 70%;
@@ -127,4 +128,58 @@
 .topSection .cardSection .rightCard .button .transparent:hover {
   background: var(--hvColor);
   color: var(--priColor);
+}
+.topSection .cardSection .leftCard {
+  flex-basis: 30%;
+  background: var(--paleGreen);
+  border-radius: 10px;
+}
+.topSection .cardSection .leftCard .main {
+  padding: 1rem 0 0 0.5rem;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+.topSection .cardSection .leftCard .main .textDiv {
+  gap: 1rem;
+  flex-direction: column;
+  flex-basis: 75%;
+}
+.topSection .cardSection .leftCard .main .textDiv h1 {
+  font-size: var(--h1FS);
+  color: var(--bColor);
+  padding-left: 15px;
+}
+.topSection .cardSection .leftCard .main .textDiv .flex {
+  gap: 1rem;
+}
+.topSection .cardSection .leftCard .main .textDiv .flex span {
+  font-size: var(--nmFS);
+}
+.topSection .cardSection .leftCard .main .textDiv .flex span small {
+  color: var(--priColor);
+}
+.topSection .cardSection .leftCard .main .textDiv .link {
+  font-size: var(--nmFS);
+  cursor: pointer;
+}
+.topSection .cardSection .leftCard .main .textDiv .link:hover .icon {
+  transform: translateX(10px);
+}
+.topSection .cardSection .leftCard .main .textDiv .link .icon {
+  transition: 0.5 ease;
+}
+.topSection .cardSection .leftCard .main .imgDiv {
+  flex-basis: 35%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.topSection .cardSection .leftCard .main .imgDiv img {
+  position: absolute;
+  top: -60px;
+  right: -34px;
+  height: 250px;
+  width: auto;
+  z-index: 100;
 }/*# sourceMappingURL=Top.css.map */
