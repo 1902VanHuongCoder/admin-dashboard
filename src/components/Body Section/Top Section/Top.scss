@@ -193,3 +193,26 @@
         }
     }
 }
+
+//MEDIA QUERIES =======================>
+
+@media screen and (max-width: 992px) {
+    .cardSection {
+        flex-flow: column;
+        .leftCard {
+            width: 70%;
+            margin: 0 auto;
+            padding: 1rem;
+            .main {
+                padding: 0 !important;
+                height: 150px !important;
+                .imgDiv{
+                    img{
+                        top: -68px;
+                        right: 13px;
+                    }
+                }
+            }
+        }
+    }
+}

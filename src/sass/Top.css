@@ -182,4 +182,23 @@
   height: 250px;
   width: auto;
   z-index: 100;
+}
+
+@media screen and (max-width: 992px) {
+  .cardSection {
+    flex-flow: column;
+  }
+  .cardSection .leftCard {
+    width: 70%;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  .cardSection .leftCard .main {
+    padding: 0 !important;
+    height: 150px !important;
+  }
+  .cardSection .leftCard .main .imgDiv img {
+    top: -68px;
+    right: 13px;
+  }
 }/*# sourceMappingURL=Top.css.map */
