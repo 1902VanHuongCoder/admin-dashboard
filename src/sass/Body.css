@@ -1,4 +1,7 @@
 .body {
   width: 82%;
   position: relative;
+  height: 100vh;
+  margin-top: 10px;
+  overflow: auto;
 }/*# sourceMappingURL=Body.css.map */

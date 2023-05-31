@@ -1,1 +1,69 @@
-/*# sourceMappingURL=Activity.css.map */
+:root {
+  --priColor: hsl(94, 59%, 35%);
+  --hvColor: #bdf094;
+  --paleGreen: hsl(96, 75%, 89%);
+  --wColor: hsl(0, 0%, 100%);
+  --bColor: hsl(0, 0%, 18%);
+  --tColor: hsl(240, 1%, 48%);
+  --bgColor: hsl(220, 10%, 94%);
+  --gColor: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+  --biggestFS: 2.5rem;
+  --h1FS: 1.5rem;
+  --h2FS: 1.25rem;
+  --h3FS: 1rem;
+  --nmFS: 0.938rem;
+  --smFS: 0.813rem;
+  --smlFS: 0.75rem;
+}
+
+.activity {
+  flex-basis: 30%;
+  padding-right: 1rem;
+}
+.activity .activityContainer {
+  width: 100%;
+}
+.activity .activityContainer .activityHeading {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.activity .activityContainer .activityHeading h1 {
+  font-size: var(--h1FS);
+  color: var(--bColor);
+}
+.activity .activityContainer .orders {
+  margin-top: 10px;
+  width: 100%;
+  gap: 1rem;
+}
+.activity .activityContainer .orders .singleUser {
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--wColor);
+  padding: 1rem;
+  border-radius: 10px;
+}
+.activity .activityContainer .orders .singleUser .userInfo {
+  gap: 1rem;
+  align-items: center;
+}
+.activity .activityContainer .orders .singleUser .userInfo img {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.activity .activityContainer .orders .singleUser .userInfo .name {
+  font-size: var(--nmFS);
+  flex-direction: column;
+}
+.activity .activityContainer .orders .singleUser .userInfo .name div {
+  font-size: var(--smFS);
+}
+.activity .activityContainer .orders .singleUser .duration {
+  font-size: var(--smFS);
+}/*# sourceMappingURL=Activity.css.map */
