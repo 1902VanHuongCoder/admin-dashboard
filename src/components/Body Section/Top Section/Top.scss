@@ -21,9 +21,11 @@
 .topSection {
     padding: 1rem;
     .headerSection {
+        display: flex;
         justify-content: space-between;
         padding: 1rem;
         .headerTitle {
+            display: flex;
             flex-direction: column;
             gap: 0.5rem;
             h1 {
@@ -38,6 +40,7 @@
         }
 
         .headerSearchBar {
+            display: flex;
             align-items: center;
             background: var(--wColor);
             padding: 0 1rem;
@@ -50,6 +53,7 @@
         }
 
         .headerAdminSection {
+            display: flex;
             align-items: center;
             gap: 10px;
             span {
@@ -74,6 +78,7 @@
             }
         }
     }
+
     .cardSection {
         margin-top: 1rem;
         gap: 1rem;
@@ -196,20 +201,58 @@
 
 //MEDIA QUERIES =======================>
 
-@media screen and (max-width: 992px) {
-    .cardSection {
-        flex-flow: column;
-        .leftCard {
-            width: 70%;
-            margin: 0 auto;
-            padding: 1rem;
-            .main {
-                padding: 0 !important;
-                height: 150px !important;
-                .imgDiv{
-                    img{
-                        top: -68px;
-                        right: 13px;
+@media screen and (max-width: 640px) {
+    .topSection {
+        .headerSection {
+            flex-direction: column;
+            padding: 0;
+            gap: 1.5rem;
+            .headerTitle {
+                h1 {
+                    font-size: 32px;
+                    span {
+                        color: #528e25;
+                    }
+                }
+                p {
+                    font-size: var(--h1FS);
+                }
+            }
+
+            .headerSearchBar {
+                height: 40px;
+                justify-content: space-between;
+                padding: 0 0 0 1rem;
+                input {
+                    flex-basis: 85%;
+                    width: 100%;
+                }
+                svg {
+                    flex-basis: 15%;
+                }
+            }
+
+            .headerAdminSection {
+                .userImage {
+                    height: 33px;
+                    width: 33px;
+                }
+            }
+        }
+        .cardSection {
+            flex-flow: column;
+            .leftCard {
+                width: 100%;
+                margin: 0 auto;
+                padding: 1rem;
+                .main {
+                    padding: 0 !important;
+                    height: 150px !important;
+                    .imgDiv {
+                        img {
+                            top: -100px;
+                            right: -20px;
+                        }
                     }
                 }
             }

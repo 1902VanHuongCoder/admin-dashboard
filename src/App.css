@@ -58,6 +58,7 @@ img{
     display: flex;
 }
 
+
 .grid{
     display: grid;
     align-items: center;
@@ -70,6 +71,9 @@ img{
     box-shadow: 0 2px 4px var(--inputColor);
     padding: .5rem .8rem;
     color: var(--tColor);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
 }
 
 .btn .icon{
@@ -89,10 +93,12 @@ body{
     padding: 1rem;
 }
 
+
+
 .container{
     position: relative;
     width: 95vw;
-    height: 95vh;
+    min-height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,6 +106,22 @@ body{
     overflow: hidden;
     border-radius: 1rem;
     box-shadow: 2px 2px 8px var(--gColor);
+}
+
+@media screen and (max-width: 640px) {
+    .headerSection {
+        flex-direction: column;
+    }
+
+    body{
+        padding: 0; 
+        margin: 0;
+    }
+    .container {
+        width: 100vw;
+        height: 100vh;
+    }
+
 }
 
 ::-webkit-scrollbar{

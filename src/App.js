@@ -5,7 +5,7 @@ import Body from './components/Body Section/Body'
 const App = () => {
   return (
     <div className='container'>
-      <Sidebar />
+      {/* <Sidebar /> */}
       <Body />
     </div>
   )

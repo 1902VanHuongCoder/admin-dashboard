@@ -120,3 +120,18 @@
         }
     }
 }
+
+
+@media screen and (max-width: 640px) {
+    .listing{
+        margin-top: 1.5rem; 
+        .listingContent{
+            flex-direction: column;
+           
+        }
+        .listingSeller {
+            flex-direction: column;
+            margin-top: 1.5rem;
+        }
+    }
+}

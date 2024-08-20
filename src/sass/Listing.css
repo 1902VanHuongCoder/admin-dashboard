@@ -114,4 +114,17 @@
 .listing .listingSeller .topSellers .card .cardText span small .date, .listing .listingSeller .featuredSellers .card .cardText span small .date {
   color: var(--priColor);
   margin-left: 10px;
+}
+
+@media screen and (max-width: 640px) {
+  .listing {
+    margin-top: 1.5rem;
+  }
+  .listing .listingContent {
+    flex-direction: column;
+  }
+  .listing .listingSeller {
+    flex-direction: column;
+    margin-top: 1.5rem;
+  }
 }/*# sourceMappingURL=Listing.css.map */

@@ -7,18 +7,19 @@ import "../../../sass/Top.css";
 const Top = () => {
   return (
     <div className="topSection">
-      <div className="headerSection flex">
-        <div className="headerTitle flex">
-          <h1>Welcom to Planti.</h1>
+      <div className="headerSection">
+        <div className="headerTitle">
+          <h1>Welcom to Planti<span>.</span></h1>
           <p>Hello Paul To, Welcom back!</p>
         </div>
 
-        <div className="headerSearchBar flex">
+        <div className="headerSearchBar">
           <input type="text" placeholder="Search Products" />
           <BiSearchAlt className="icon" />
         </div>
+        
 
-        <div className="headerAdminSection flex">
+        <div className="headerAdminSection">
           <span>
             {" "}
             <TbMessageCircle className="icon" />

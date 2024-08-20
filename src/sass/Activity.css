@@ -66,4 +66,11 @@
 }
 .activity .activityContainer .orders .singleUser .duration {
   font-size: var(--smFS);
+}
+
+@media screen and (max-width: 640px) {
+  .activity {
+    padding: 1rem;
+    margin-top: 1.5rem;
+  }
 }/*# sourceMappingURL=Activity.css.map */
