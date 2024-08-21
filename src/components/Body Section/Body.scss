@@ -4,6 +4,9 @@
     height: 100vh;
     margin-top: 10px;
     overflow: auto;
+    .bottom{
+        margin-bottom: 30px;
+    }
 }
 
 
@@ -17,6 +20,7 @@
         .bottom{
             flex-direction: column;
             margin-top: 10px;
+            margin-bottom: 10px;
         }
     }
 

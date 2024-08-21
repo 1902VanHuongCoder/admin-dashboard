@@ -20,6 +20,7 @@
 
 .topSection {
     padding: 1rem;
+    overflow: hidden;
     .headerSection {
         display: flex;
         justify-content: space-between;
@@ -210,8 +211,12 @@
             .headerTitle {
                 h1 {
                     font-size: 32px;
+                    display: flex;
+                    justify-content: space-between;
                     span {
-                        color: #528e25;
+                        span {
+                            color: #528e25;
+                        }
                     }
                 }
                 p {
@@ -254,6 +259,19 @@
                             right: -20px;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 640px) {
+    .topSection{
+        .headerSection{
+            .headerTitle{
+                h1 span:nth-child(2){
+                    display: none;
                 }
             }
         }

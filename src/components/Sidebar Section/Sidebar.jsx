@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../../sass/Sidebar.css";
 import { AiFillClockCircle } from "react-icons/ai";
 import { AiFillSound } from "react-icons/ai";
@@ -9,10 +9,12 @@ import { BsNewspaper } from "react-icons/bs";
 import { BsFillPersonFill } from "react-icons/bs";
 import { SlScreenDesktop } from "react-icons/sl";
 import { FaRegQuestionCircle } from "react-icons/fa";
+import { sidebarContext } from "../../contexts/sidebarContext";
 
 const Sidebar = () => {
+  const {isSidebar} = useContext(sidebarContext);
   return (
-    <div className="sidebar grid">
+    <div className={`sidebar grid ${isSidebar && 'showSidebar'}`}>
       <div className="logoDiv flex">
         <img
           src="./logo.png"

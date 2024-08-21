@@ -5,6 +5,9 @@
   margin-top: 10px;
   overflow: auto;
 }
+.bodyClass .bottom {
+  margin-bottom: 30px;
+}
 
 @media screen and (max-width: 640px) {
   .headerSection {
@@ -16,5 +19,6 @@
   .bodyClass .bottom {
     flex-direction: column;
     margin-top: 10px;
+    margin-bottom: 10px;
   }
 }/*# sourceMappingURL=Body.css.map */

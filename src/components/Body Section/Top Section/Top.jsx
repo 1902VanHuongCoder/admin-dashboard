@@ -9,7 +9,7 @@ const Top = () => {
     <div className="topSection">
       <div className="headerSection">
         <div className="headerTitle">
-          <h1>Welcom to Planti<span>.</span></h1>
+          <h1><span>Welcom to Planti<span>.</span></span><span>=</span></h1>
           <p>Hello Paul To, Welcom back!</p>
         </div>
 

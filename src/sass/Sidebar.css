@@ -22,9 +22,8 @@
   background: var(--wColor);
   height: 100%;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  overflow: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
   gap: 1.5rem;
 }
 .sidebar .logoDiv {
@@ -142,4 +141,17 @@
   margin-top: 8px;
   font-weight: 500;
   z-index: 10;
+}
+
+@media screen and (max-width: 640px) {
+  .sidebar {
+    width: 80%;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 100%;
+  }
+  .sidebar .showSidebar {
+    right: 0;
+  }
 }/*# sourceMappingURL=Sidebar.css.map */

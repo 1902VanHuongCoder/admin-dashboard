@@ -19,6 +19,7 @@
 
 .topSection {
   padding: 1rem;
+  overflow: hidden;
 }
 .topSection .headerSection {
   display: flex;
@@ -196,8 +197,10 @@
   }
   .topSection .headerSection .headerTitle h1 {
     font-size: 32px;
+    display: flex;
+    justify-content: space-between;
   }
-  .topSection .headerSection .headerTitle h1 span {
+  .topSection .headerSection .headerTitle h1 span span {
     color: #528e25;
   }
   .topSection .headerSection .headerTitle p {
@@ -234,5 +237,10 @@
   .topSection .cardSection .leftCard .main .imgDiv img {
     top: -100px;
     right: -20px;
+  }
+}
+@media screen and (min-width: 640px) {
+  .topSection .headerSection .headerTitle h1 span:nth-child(2) {
+    display: none;
   }
 }/*# sourceMappingURL=Top.css.map */
