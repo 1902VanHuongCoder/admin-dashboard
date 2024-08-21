@@ -34,6 +34,15 @@
 .topSection .headerSection .headerTitle h1 {
   font-size: var(--h1FS);
   color: var(--bColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topSection .headerSection .headerTitle h1 span:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
 }
 .topSection .headerSection .headerTitle p {
   font-size: var(--nmFS);
@@ -107,17 +116,17 @@
      object-fit: cover;
 }
 .topSection .cardSection .rightCard h1 {
-  z-index: 100;
+  z-index: 9;
   color: var(--wColor);
   font-size: var(--h1FS);
 }
 .topSection .cardSection .rightCard p {
-  z-index: 100;
+  z-index: 9;
   color: var(--wColor);
 }
 .topSection .cardSection .rightCard .button {
   align-items: center;
-  z-index: 100;
+  z-index: 8;
   margin-top: 10px;
 }
 .topSection .cardSection .rightCard .button .btn {
@@ -186,7 +195,7 @@
   right: -34px;
   height: 250px;
   width: auto;
-  z-index: 100;
+  z-index: 10;
 }
 
 @media screen and (max-width: 640px) {

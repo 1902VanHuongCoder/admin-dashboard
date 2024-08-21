@@ -1,15 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import { BiSearchAlt } from "react-icons/bi";
 import { TbMessageCircle } from "react-icons/tb";
 import { MdNotificationsNone } from "react-icons/md";
 import {BsArrowRightShort} from 'react-icons/bs'
 import "../../../sass/Top.css";
+import { sidebarContext } from "../../../contexts/sidebarContext";
+import { GiHamburgerMenu } from "react-icons/gi";
 const Top = () => {
+  const {isSidebar, func } = useContext(sidebarContext);
+  const handleShowSidebar = () => {
+    func(!isSidebar);
+    console.log("Hello");
+  }
   return (
     <div className="topSection">
       <div className="headerSection">
         <div className="headerTitle">
-          <h1><span>Welcom to Planti<span>.</span></span><span>=</span></h1>
+          <h1><span>Welcom to Planti<span>.</span></span><span onClick={handleShowSidebar}><GiHamburgerMenu /></span></h1>
           <p>Hello Paul To, Welcom back!</p>
         </div>
 
