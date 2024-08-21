@@ -163,7 +163,8 @@
     position: absolute;
     z-index: 20;
     top: 0;
-    right: 100%;
+    left: -100%;
+    transition: 1s;
   }
   .sidebar .logoDiv .closeIcon {
     display: flex;
@@ -179,6 +180,6 @@
     align-items: center;
   }
   .sidebar.showSidebar {
-    right: 78px;
+    left: 0;
   }
 }/*# sourceMappingURL=Sidebar.css.map */

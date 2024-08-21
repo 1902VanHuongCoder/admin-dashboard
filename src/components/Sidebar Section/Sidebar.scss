@@ -177,7 +177,8 @@
         position: absolute;
         z-index: 20;
         top: 0;
-        right: 100%;
+        left: -100%;
+        transition: 1s;
         .logoDiv {
             .closeIcon {
                 display: flex;
@@ -195,6 +196,6 @@
         }
     }
     .sidebar.showSidebar {
-        right: 78px;
+        left: 0;
     }
 }

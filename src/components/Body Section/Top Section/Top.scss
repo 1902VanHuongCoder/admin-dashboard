@@ -57,6 +57,7 @@
             border-radius: 5px;
 
             input {
+                width: 400px;
                 border: none;
                 outline: none;
             }
@@ -219,7 +220,7 @@
             gap: 1.5rem;
             .headerTitle {
                 h1 {
-                    font-size: 32px;
+                    font-size: 28px;
                     display: flex;
                     justify-content: space-between;
                     span {
@@ -229,7 +230,7 @@
                     }
                 }
                 p {
-                    font-size: var(--h1FS);
+                    font-size: 18px;
                 }
             }
 
